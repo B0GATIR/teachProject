@@ -33,5 +33,6 @@ public class Main {
     public static void main(String[] args) {
         InputCLass obj = new InputCLass();
         obj.getValue();
+
     }
 }

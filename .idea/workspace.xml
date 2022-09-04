@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Update workspace.xml">
+    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел четыре главы. Остановился на 157 странице.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -21,6 +21,10 @@
   </component>
   <component name="ProjectId" id="2EAzhtuZWjDsJB80s4H3EYvO1f7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -43,9 +47,10 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="213972e6-c3a5-44fa-9029-8e14fd120d58" name="Changes" comment="" />
+      <changelist id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел три главы. Остановился на 111 странице." />
       <created>1662053300755</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -58,7 +63,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662127725716</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Прошел три главы. Остановился на 111 странице.">
+      <created>1662140270346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662140270346</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Прошел три главы. Остановился на 132 странице.">
+      <created>1662194182215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662194182215</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Прошел четыре главы. Остановился на 157 странице.">
+      <created>1662286730148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662286730148</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,6 +100,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update workspace.xml" />
+    <MESSAGE value="Прошел три главы. Остановился на 111 странице." />
+    <MESSAGE value="Прошел три главы. Остановился на 132 странице." />
+    <MESSAGE value="Прошел четыре главы. Остановился на 157 странице." />
+    <option name="LAST_COMMIT_MESSAGE" value="Прошел четыре главы. Остановился на 157 странице." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/teachProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1662295150555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

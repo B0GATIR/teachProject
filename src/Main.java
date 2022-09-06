@@ -1,22 +1,28 @@
 //import javax.swing.JOptionPane;
 //import java.util.*;
-import InputClass.*;
-import static InputClass.InputClass.getSum; //Импортируем статический метод
-class InputClassB extends InputClass{
-    @Override //Аннотация об переопределении метода класса print()
-    public void print(){
-        super.print(); //Вызов метода print() суперкласса InputClass
-        getSum(1, 2);
+import Packages.ColoredFigure;
+
+class Tringle extends ColoredFigure{
+    public String getName(){
+        return "треугольник";
     }
 
-    InputClassB(){
-        super("text"); //Вызов конструктора суперкласса перед определением констурктора подкласса
+    public double getArea(){
+        double k = Math.sqrt(3)/4;
+        return size*size*k;
+    }
+
+    Tringle(String clr, int s){
+        super(clr, s);
     }
 }
+
 public class Main {
     public static void main(String[] args) {
-        InputClassB obj = new InputClassB();
-        obj.print();
-        getSum(100, 100);
+        Tringle T = new Tringle("красный", 2);
+        T.show();
+        ColoredFigure F;
+        F = T;
+        F.show();
     }
 }

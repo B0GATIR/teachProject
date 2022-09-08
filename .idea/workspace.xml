@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел семь глав. Закончил на странице 290.">
+    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел семь глав. Остановился на главе 8, страница 272.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -32,14 +32,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/netrunner/IdeaProjects/teachProject",
-    "settings.editor.selected.configurable": "configurable.group.tools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/netrunner/IdeaProjects/teachProject&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -105,12 +105,12 @@
       <option name="project" value="LOCAL" />
       <updated>1662357743616</updated>
     </task>
-    <task id="LOCAL-00007" summary="Прошел семь глав. Закончил на странице 290.">
-      <created>1662545743767</created>
+    <task id="LOCAL-00007" summary="Прошел семь глав. Остановился на Интерфейсах, страница 249 странице.">
+      <created>1662452568958</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1662545743767</updated>
+      <updated>1662452568959</updated>
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />
@@ -133,8 +133,8 @@
     <MESSAGE value="Прошел четыре главы. Остановился на 157 странице." />
     <MESSAGE value="Прошел пять глав. Остановился на 195 странице." />
     <MESSAGE value="Прошел пять глав. Остановился на 227 странице." />
-    <MESSAGE value="Прошел семь глав. Закончил на странице 290." />
-    <option name="LAST_COMMIT_MESSAGE" value="Прошел семь глав. Закончил на странице 290." />
+    <MESSAGE value="Прошел семь глав. Остановился на Интерфейсах, страница 249 странице." />
+    <option name="LAST_COMMIT_MESSAGE" value="Прошел семь глав. Остановился на Интерфейсах, страница 249 странице." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -145,18 +145,10 @@
           <properties field="size" class="Packages.ColoredFigure" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/teachProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1662559626669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/teachProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1662617851374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

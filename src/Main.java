@@ -36,17 +36,33 @@ class BankAccount{
     }
 }
 
-abstract class Base{
-    private String name;
+class Based<X>{
+    private X sm;
 
-    void show(){
-        System.out.println("Object is: " + name);
+    Based(X sm){
+        set(sm);
     }
 
-    abstract void hello();
+    void set(X sm){
+        this.sm = sm;
+    }
 
-    Base(String name){
-        this.name = name;
+    X get(){
+        return sm;
+    }
+}
+
+class Alpha<X, Y>{
+    Based<X> obj;
+    Y second;
+
+    Alpha(X first, Y second){
+        obj = new Based<>(first);
+        this.second = second;
+    }
+
+    void show(){
+        System.out.println(obj.get() + " " + second);
     }
 }
 public class Main {
@@ -56,11 +72,7 @@ public class Main {
 
         //Темы для повторения 4.1 в эл.жур 25 апреля
 
-        Base obj = new Base("Red") {
-            @Override
-            void hello() {
-                System.out.println("It is no identified class");
-            }
-        }
+        Alpha<Integer, Character> A = new Alpha<>(100, 'A');
+        A.show();
     }
 }

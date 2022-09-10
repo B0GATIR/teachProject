@@ -37,65 +37,41 @@ import java.util.*;
 //    }
 //}
 
-class Base{
-    String data;
-
-    void show(){
-        System.out.println(data);
-    }
-
-    Base(String data){
-        this.data = data;
-    }
+interface MyInterface<X>{
+    X get();
+    void set(X arg);
 }
 
-class Alpha extends Base{
-    int number;
+class Alpha implements MyInterface<Integer>{
+    private Integer value;
+
+    public Integer get(){
+        return value;
+    }
+
+    public void set(Integer arg){
+        this.value = arg;
+    }
 
     void show(){
-        super.show();
-        System.out.println("This " + number);
+        System.out.println(value + "!");
     }
 
-    Alpha(String x, int number){
-        super(x);
-        this.number =  number;
-    }
-}
-
-class Bravo extends Base{
-    String string;
-
-    void show(){
-        super.show();
-        System.out.println("This " + string);
-    }
-
-    Bravo(String x, String string){
-        super(x);
-        this.string =  string;
-    }
-}
-
-class MyClass<X extends Base>{
-    X obj;
-
-    void show(){
-        System.out.println("MyClass object");
-        obj.show();
-    }
-
-    MyClass(X obj){
-        this.obj = obj;
+    Alpha(Integer arg){
+        set(arg);
     }
 }
 
 public class Main {
-
     public static void main(String[] args) {
 //        BankAccount bank = new BankAccount(8);
 //        System.out.printf("All sum = %.3f\n", bank.fellow.getSum());
-        MyClass<Alpha> obj = new MyClass<>(new Alpha("Alpha", 1));
-        obj.show();
+
+        MyInterface intf;
+        Alpha A = new Alpha(1);
+        A.show();
+        intf = A;
+        intf.set(0);
+        A.show();
     }
 }

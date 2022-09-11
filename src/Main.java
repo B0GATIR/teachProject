@@ -1,77 +1,79 @@
 //import javax.swing.JOptionPane;
-import java.nio.charset.Charset;
-import java.util.*;
+//import java.nio.charset.Charset;
+//import java.util.*;
 //import Packages.ColoredFigure;
 
-//class BankAccount{
-//    class Person{
-//        String name;
-//        int startSum;
-//        int time;
-//
-//        public double getSum(){
-//            double allSum = startSum;
-//            for (int i = 1; i <= time; i++){
-//                allSum *= (1 + rate/100);
-//            }
-//            return allSum;
-//        }
-//
-//        Person(String name, int startSum, int time){
-//            this.name = name;
-//            this.startSum = startSum;
-//            this.time = time;
-//        }
-//    }
-//
-//    double rate;
-//    Person fellow;
-//
-//    private Person createPerson(){
-//        Scanner jIn = new Scanner(System.in);
-//        return new Person(jIn.nextLine(), Integer.parseInt(jIn.nextLine()), Integer.parseInt(jIn.nextLine()));
-//    }
-//    BankAccount(int rate){
-//        this.rate = rate;
-//        fellow = createPerson();
-//    }
-//}
+class Alpha{
+    private final String name;
 
-interface MyInterface<X>{
-    X get();
-    void set(X arg);
+    Alpha(String name){
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
 
-class Alpha implements MyInterface<Integer>{
-    private Integer value;
+class Bravo extends Alpha{
+    Bravo(String name){
+        super(name);
+    }
+}
 
-    public Integer get(){
-        return value;
+class Charlie extends Bravo{
+    Charlie(String name){
+        super(name);
+    }
+}
+
+class Delta extends Charlie{
+    Delta(String name){
+        super(name);
+    }
+}
+
+class Echo extends Delta{
+    Echo(String name){
+        super(name);
+    }
+}
+
+class MyClass<T>{
+    private final T obj;
+
+    @Override
+    public String toString() {
+        return obj.toString();
     }
 
-    public void set(Integer arg){
-        this.value = arg;
-    }
-
-    void show(){
-        System.out.println(value + "!");
-    }
-
-    Alpha(Integer arg){
-        set(arg);
+    MyClass(T obj){
+        this.obj = obj;
     }
 }
 
 public class Main {
-    public static void main(String[] args) {
-//        BankAccount bank = new BankAccount(8);
-//        System.out.printf("All sum = %.3f\n", bank.fellow.getSum());
+    static void showDown(MyClass<? extends Charlie> obj){
+        System.out.println(obj);
+    }
 
-        MyInterface intf;
-        Alpha A = new Alpha(1);
-        A.show();
-        intf = A;
-        intf.set(0);
-        A.show();
+    static void showUp(MyClass<? super Charlie> obj){
+        System.out.println(obj);
+    }
+    public static void main(String[] args) {
+        MyClass<Alpha> A = new MyClass<>(new Alpha("Object A"));
+        MyClass<Bravo> B = new MyClass<>(new Bravo("Object B"));
+        MyClass<Charlie> C = new MyClass<>(new Charlie("Object C"));
+        MyClass<Delta> D = new MyClass<>(new Delta("Object D"));
+        MyClass<Echo> E = new MyClass<>(new Echo("Object E"));
+
+        showUp(A);
+        showUp(B);
+        showUp(C);
+
+        showDown(C);
+        showDown(D);
+        showDown(E);
     }
 }

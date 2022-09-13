@@ -3,77 +3,46 @@
 //import java.util.*;
 //import Packages.ColoredFigure;
 
-class Alpha{
-    private final String name;
+class MyClass{
+    private int num;
 
-    Alpha(String name){
-        this.name = name;
+    void show(){
+        System.out.println(num + " - field num from MyClass");
     }
 
-    @Override
-    public String toString() {
-        return name;
+    void set(){
+        this.num = 0;
     }
-}
 
-class Bravo extends Alpha{
-    Bravo(String name){
-        super(name);
+    void set(int num){
+        this.num = num;
     }
-}
 
-class Charlie extends Bravo{
-    Charlie(String name){
-        super(name);
+    MyClass(int num){
+        this.num = num;
     }
 }
 
-class Delta extends Charlie{
-    Delta(String name){
-        super(name);
-    }
+@FunctionalInterface
+interface MyInterfaceA{
+    void set(int num);
 }
 
-class Echo extends Delta{
-    Echo(String name){
-        super(name);
-    }
-}
-
-class MyClass<T>{
-    private final T obj;
-
-    @Override
-    public String toString() {
-        return obj.toString();
-    }
-
-    MyClass(T obj){
-        this.obj = obj;
-    }
+@FunctionalInterface
+interface MyInterfaceB{
+    void set();
 }
 
 public class Main {
-    static void showDown(MyClass<? extends Charlie> obj){
-        System.out.println(obj);
-    }
-
-    static void showUp(MyClass<? super Charlie> obj){
-        System.out.println(obj);
-    }
     public static void main(String[] args) {
-        MyClass<Alpha> A = new MyClass<>(new Alpha("Object A"));
-        MyClass<Bravo> B = new MyClass<>(new Bravo("Object B"));
-        MyClass<Charlie> C = new MyClass<>(new Charlie("Object C"));
-        MyClass<Delta> D = new MyClass<>(new Delta("Object D"));
-        MyClass<Echo> E = new MyClass<>(new Echo("Object E"));
+        MyClass obj = new MyClass(1);
+        MyInterfaceA refA = obj::set;
+        MyInterfaceB refB = obj::set;
 
-        showUp(A);
-        showUp(B);
-        showUp(C);
+        refA.set(100);
+        obj.show();
 
-        showDown(C);
-        showDown(D);
-        showDown(E);
+        refB.set();
+        obj.show();
     }
 }

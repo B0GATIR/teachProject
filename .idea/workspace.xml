@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел девять глав, остановился на лямбда-выражениях, страница 355.">
+    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел девять глав, остановился на использовании лямбда-выражений, страница 380.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -32,14 +32,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/netrunner/IdeaProjects/teachProject&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/netrunner/IdeaProjects/teachProject",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -154,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662962578502</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Прошел девять глав, остановился на использовании лямбда-выражений, страница 380.">
+      <created>1663053350049</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663053350049</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,7 +193,8 @@
     <MESSAGE value="Прошел восемь глав, страница 343." />
     <MESSAGE value="Прошел девять глав, остановился на лямбда-выражениях, страница 353." />
     <MESSAGE value="Прошел девять глав, остановился на лямбда-выражениях, страница 355." />
-    <option name="LAST_COMMIT_MESSAGE" value="Прошел девять глав, остановился на лямбда-выражениях, страница 355." />
+    <MESSAGE value="Прошел девять глав, остановился на использовании лямбда-выражений, страница 380." />
+    <option name="LAST_COMMIT_MESSAGE" value="Прошел девять глав, остановился на использовании лямбда-выражений, страница 380." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

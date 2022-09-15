@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел девять глав, остановился на использовании лямбда-выражений, страница 380.">
+    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 393.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Packages/MathForProgramming.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Packages/ColoredFigure.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,6 +44,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/home/netrunner/IdeaProjects/teachProject",
     "settings.editor.selected.configurable": "vcs.Git"
   }
@@ -165,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663053350049</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 393.">
+      <created>1663185712418</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663185712418</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,21 +206,10 @@
     <MESSAGE value="Прошел девять глав, остановился на лямбда-выражениях, страница 353." />
     <MESSAGE value="Прошел девять глав, остановился на лямбда-выражениях, страница 355." />
     <MESSAGE value="Прошел девять глав, остановился на использовании лямбда-выражений, страница 380." />
-    <option name="LAST_COMMIT_MESSAGE" value="Прошел девять глав, остановился на использовании лямбда-выражений, страница 380." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/Packages/ColoredFigure.java</url>
-          <line>4</line>
-          <properties field="size" class="Packages.ColoredFigure" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 393." />
+    <option name="LAST_COMMIT_MESSAGE" value="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 393." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/teachProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1662617851374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/teachProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1663233102813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

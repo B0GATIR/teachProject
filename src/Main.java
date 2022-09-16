@@ -1,68 +1,71 @@
-//import Packages.MathForProgramming;
+import Packages.MathForProgramming;
+import Packages.LeetCode;
 import java.util.*;
 
 
-class RomanNumeral{
-    char sym;
-    int num;
-
-    static public int findNum(RomanNumeral[] array, char s){
-        int result = 0;
-        for (RomanNumeral obj: array) {
-            if (obj.sym == s){
-                result =  obj.num;
-            }
-        }
-        return result;
-    }
-
-    RomanNumeral(char sym, int num){
-        this.num = num;
-        this.sym = sym;
-    }
-
-    @Override
-    public String toString(){
-        return sym + " " + num;
-    }
-}
+class ListNode {
+      int val;
+      ListNode next;
+      ListNode() {}
+      ListNode(int val) { this.val = val; }
+      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ }
 
 public class Main {
 
-    static RomanNumeral[] getAllRomanNumerals(){
-        RomanNumeral[] array = new RomanNumeral[7];
+    //Не входит в программу LeetCode
+    static ListNode getListNode(int length){
+        Scanner jIn = new Scanner(System.in);
 
-        array[0] = new RomanNumeral('I', 1);
-        array[1] = new RomanNumeral('V', 5);
-        array[2] = new RomanNumeral('X', 10);
-        array[3] = new RomanNumeral('L', 50);
-        array[4] = new RomanNumeral('C', 100);
-        array[5] = new RomanNumeral('D', 500);
-        array[6] = new RomanNumeral('M', 1000);
+        ListNode head = new ListNode(Integer.parseInt(jIn.nextLine()));
+        ListNode end = head;
 
-        return array;
+        for (int i = 1; i < length; i++){
+            end.next = new ListNode(Integer.parseInt(jIn.nextLine()));
+            end = end.next;
+        }
+
+        end.next = null;
+
+        return head;
+    }
+    //Входит в LeetCode
+    static ArrayList<Integer> convertListNodeInArrayList(ListNode head){
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        ListNode end = head;
+
+        do {
+            arrayList.add(end.val);
+            end = end.next;
+        } while (end != null);
+
+        return arrayList;
     }
 
-    static int getArabianNum(RomanNumeral[] array, char[] string){
-        int result = 0;
-        for (int i = 0; i < string.length - 1; i++){
-            if (RomanNumeral.findNum(array, string[i]) <
-                    RomanNumeral.findNum(array, string[i + 1])){
-                result += RomanNumeral.findNum(array, string[i]) * -1;
+    static boolean isPalindrome(ArrayList<Integer> arrayList){
+
+        boolean isIt = true;
+
+        for (int i = 0; i < arrayList.size()/2; i++){
+            if (arrayList.get(i) == arrayList.get((arrayList.size() - 1) - i)){
+                isIt = true;
             } else {
-                result += RomanNumeral.findNum(array, string[i]);
+                return false;
             }
         }
-        return result  + RomanNumeral.findNum(array, string[string.length - 1]);
+
+        return isIt;
     }
 
     public static void main(String[] args) {
+        int length = 4;
+        ArrayList<Integer> arrayList = convertListNodeInArrayList(getListNode(length));
 
-        RomanNumeral[] arrayRomanNumerals = getAllRomanNumerals();
+        for (int i = 0; i < arrayList.size(); i++){
+            System.out.println(arrayList.get(i));
+        }
 
-        Scanner jIn = new Scanner(System.in);
-        char[] string = jIn.nextLine().toCharArray();
-
-        System.out.println(getArabianNum(arrayRomanNumerals, string));
+        System.out.println(isPalindrome(arrayList));
     }
 }

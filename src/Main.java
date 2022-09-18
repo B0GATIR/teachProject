@@ -1,33 +1,52 @@
-import Packages.MathForProgramming;
-import Packages.LeetCode;
 import java.util.*;
 
-public class Main {
-    public static boolean canBeConstruct(String ransomNote, String magazine){
-        char[] ransomNoteArray = ransomNote.toCharArray();
-        char[] magazineArray = magazine.toCharArray();
+ class ListNode {
+      int val;
+      ListNode next;
+      ListNode() {}
+      ListNode(int val) { this.val = val; }
+      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ }
 
-        int counter = 0;
-        for (int i = 0; i < ransomNoteArray.length; i++){
-            for (int j = 0; j < magazineArray.length; j++){
-                if (ransomNoteArray[i] == magazineArray[j]){
-                    counter++;
-                    magazineArray[j] = ' ';
-                    System.out.println(magazine);
-                    break;
-                }
-            }
+public class Main {
+
+    static public ListNode getListNode(int length){
+        ListNode head = new ListNode(1);
+        ListNode end = head;
+
+        for (int i = 2; i <= length; i++){
+            end.next = new ListNode(i);
+            end = end.next;
         }
 
-
-        if (counter == ransomNote.length())
-            return true;
-        else
-            return false;
+        return head;
     }
 
+    //LeetCode
+    static public int getMiddlePosition(ListNode listNode){
+        int counter = 0;
 
+        while (listNode != null){
+            counter++;
+            listNode = listNode.next;
+        }
+
+        return counter / 2 + 1;
+    }
     public static void main(String[] args) {
-        System.out.println(canBeConstruct("aa", "ab"));
+        Scanner jIn = new Scanner(System.in);
+        int n = Integer.parseInt(jIn.nextLine());
+        ListNode listNode = getListNode(n);
+
+        int middle = getMiddlePosition(listNode);
+
+        for (int i = 1; i < middle; i++){
+            listNode = listNode.next;
+        }
+
+        while (listNode != null){
+            System.out.println(listNode.val);
+            listNode = listNode.next;
+        }
     }
 }

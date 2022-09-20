@@ -3,18 +3,23 @@ import java.util.*;
 
 
 public class Main {
+
+    static public int toZero(int step, int num){
+        if (num == 0){
+            return step;
+        } else if (num % 2 == 0){
+            step++;
+            return toZero(step, num / 2);
+        } else {
+            step++;
+            return toZero(step, num - 1);
+        }
+    }
     public static void main(String[] args) {
         Scanner jIn = new Scanner(System.in);
 
-        String input = jIn.nextLine();
-        int num = 0;
+        int input = Integer.parseInt(jIn.nextLine());
 
-        try {
-            num = Integer.parseInt(input);
-
-            System.out.println(num - 1 + " " + num + " " + num + 1);
-        } catch (Exception e){
-            System.out.println("Error! " + e.getLocalizedMessage());
-        }
+        System.out.println(toZero(0, input));
     }
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел десять глав, остановился на контролируемых и неконтролируемых исключениях, страница 420.">
+    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел 11 глав, остановился на работе с потоками, страница 441.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -230,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664347808314</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Прошел 11 глав, остановился на работе с потоками, страница 441.">
+      <created>1665503681501</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1665503681501</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,7 +270,8 @@
     <MESSAGE value="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 393." />
     <MESSAGE value="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 400." />
     <MESSAGE value="Прошел десять глав, остановился на контролируемых и неконтролируемых исключениях, страница 420." />
-    <option name="LAST_COMMIT_MESSAGE" value="Прошел десять глав, остановился на контролируемых и неконтролируемых исключениях, страница 420." />
+    <MESSAGE value="Прошел 11 глав, остановился на работе с потоками, страница 441." />
+    <option name="LAST_COMMIT_MESSAGE" value="Прошел 11 глав, остановился на работе с потоками, страница 441." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -1,80 +1,64 @@
 import java.text.ParseException;
 import java.util.*;
+import static javax.swing.JOptionPane.*;
 
-//class MyThread implements Runnable{
-//    @Override
-//    public void run() {
-//        for (int i = 0; i < 5; i++){
-//            System.out.println("Second thread " + i);
-//            try {
-//                Thread.sleep(1200);
-//            } catch (InterruptedException e){
-//                System.out.println(e.getMessage());
-//            }
-//        }
-//    }
-//}
+class MyNumber{
+    public int number;
 
-//class MyThread extends Thread{
-//    @Override
-//    public void run() {
-//        for (int i = 0; i < 5; i++){
-//            System.out.println("Second thread " + i);
-//            try {
-//                Thread.sleep(1200);
-//            } catch (InterruptedException e){
-//                System.out.println(e.getMessage());
-//            }
-//        }
-//    }
-//}
+    MyNumber(int number){
+        this.number = number;
+    }
+}
+
+class MyThread extends Thread{
+    private MyNumber obj;
+    private int time;
+    private int count;
+    private boolean state;
+    MyThread(String name, MyNumber obj, int time, int count, boolean state){
+        super(name);
+        this.obj = obj;
+        this.time = time;
+        this.count = count;
+        this.state = state;
+        start();
+    }
+
+    @Override
+    public void run(){
+        for (int i = 0; i < count; i++){
+            synchronized (obj){
+                System.out.println("--------------------------------------------");
+                System.out.println(getName() + " has " + obj.number + " as value of field obj");
+                try {
+                    Thread.sleep(time);
+                } catch (InterruptedException e){
+                    System.out.println(e);
+                }
+                if (state){
+                    obj.number++;
+                } else {
+                    obj.number--;
+                }
+                System.out.println(getName() + " get new value for field obj: " + obj.number);
+                System.out.println("--------------------------------------------");
+            }
+        }
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
-//        Thread t = new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                for (int i = 0; i < 5; i++){
-//                    System.out.println("Second thread " + i);
-//                    try {
-//                        Thread.sleep(1200);
-//                    } catch (InterruptedException e){
-//                        System.out.println(e.getMessage());
-//                    }
-//                }
-//            }
-//        });
-
-//        Runnable r = ()->{
-//            for (int i = 0; i < 5; i++){
-//                System.out.println("Second thread " + i);
-//                try {
-//                    Thread.sleep(1200);
-//                } catch (InterruptedException e){
-//                    System.out.println(e.getMessage());
-//                }
-//            }
-//        };
-//        Thread t = new Thread(r);
-
-//        MyThread t = new MyThread();
-
-        t.start();
-        for (int i = 0; i < 5; i++){
-            System.out.println("Main thread " + (char)('A' + i));
-            try {
-                Thread.sleep(1800);
-            } catch (InterruptedException e){
-                System.out.println(e.getMessage());
-            }
-        }
+        MyNumber n = new MyNumber(5);
+        MyThread tA = new MyThread("Alpha", n, 1000, 200, true);
+        MyThread tB = new MyThread("Bravo", n, 1000, 200, false);
         try {
-            if (t.isAlive()){
-                t.join();
+            if (tA.isAlive()){
+                tA.join();
             }
-            System.out.println("It`s all");
-        } catch (InterruptedException e){
-            System.out.println(e.getMessage());
-        }
+            if (tB.isAlive()){
+                tB.join();
+            }
+        } catch (InterruptedException e){}
     }
 }

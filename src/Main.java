@@ -1,25 +1,31 @@
-@FunctionalInterface
-interface MyInterface<A>{
-    void echo(A smt);
-}
+import java.awt.*;
+import java.text.ParseException;
+import java.util.*;
 
-class MyClass<A> implements MyInterface<A>{
-    public void echo(A smt){
-        System.out.println(smt);
-    }
-}
+enum Size{Small, Medium, Large}
 
-record Number(int num) {
-//    @Override
-//    public String toString() {
-//        return Integer.toString(num);
-//    }
-}
 public class Main {
+    public static void main(String[] args) throws InterruptedException {
+//        Size size = Size.Medium;
+//        switch (size) {
+//            case Small -> System.out.println(Size.Small);
+//            case Medium -> System.out.println(Size.Medium);
+//            case Large -> System.out.println(Size.Large);
+//            default -> System.out.println("IDK");
+//        }
 
-    public static void main(String[] args) {
-        Number num = new Number(1);
-        MyInterface<Number> A = new MyClass<>();
-        A.echo(num);
+        int i = 0;
+        LabelOne:
+        while (true){
+            Thread.sleep(1000);
+            System.out.println(i);
+            LabelTwo:
+            while (true){
+                i++;
+                if (i % 5 == 0){
+                    continue LabelOne;
+                }
+            }
+        }
     }
 }

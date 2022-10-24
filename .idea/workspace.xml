@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 400.">
+    <list default="true" id="4d9a402e-9275-4f06-b80d-3d4e05e05211" name="Changes" comment="Программирование на JAVA Исчерпывающее руководство. Глава 4. Страница 168">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -223,7 +223,35 @@
       <option name="project" value="LOCAL" />
       <updated>1663686194006</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Прошел десять глав, остановился на контролируемых и неконтролируемых исключениях, страница 420.">
+      <created>1664347808314</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1664347808314</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Прошел 11 глав, остановился на работе с потоками, страница 441.">
+      <created>1665503681501</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1665503681501</updated>
+    </task>
+    <task id="LOCAL-00025" summary="На многопоточном программировании закончил изучать книгу. Ищу другую.">
+      <created>1665849423589</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1665849423589</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Программирование на JAVA Исчерпывающее руководство. Глава 4. Страница 145">
+      <created>1665929997115</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1665929997115</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,7 +283,12 @@
     <MESSAGE value="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 393.&#10;&#10;Main Переделать задачку на нахождение палиндрома с помощью двух цепей, одна из которых оригинальная, а другая перевернута." />
     <MESSAGE value="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 393." />
     <MESSAGE value="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 400." />
-    <option name="LAST_COMMIT_MESSAGE" value="Прошел десять глав, остановился на перехвате и обработке ошибок, страница 400." />
+    <MESSAGE value="Прошел десять глав, остановился на контролируемых и неконтролируемых исключениях, страница 420." />
+    <MESSAGE value="Прошел 11 глав, остановился на работе с потоками, страница 441." />
+    <MESSAGE value="На многопоточном программировании закончил изучать книгу. Ищу другую." />
+    <MESSAGE value="Программирование на JAVA Исчерпывающее руководство. Глава 4. Страница 145" />
+    <MESSAGE value="Программирование на JAVA Исчерпывающее руководство. Глава 4. Страница 158" />
+    <option name="LAST_COMMIT_MESSAGE" value="Программирование на JAVA Исчерпывающее руководство. Глава 4. Страница 158" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -266,6 +299,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/teachProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1662559626669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/teachProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1663233102813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

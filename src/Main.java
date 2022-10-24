@@ -14,11 +14,14 @@ public class Main {
 //            default -> System.out.println("IDK");
 //        }
 
-        int i = 0;
+        int i = 1;
         LabelOne:
         while (true){
-            Thread.sleep(1000);
-            System.out.println(i);
+            Thread.sleep(10);
+            System.out.print(i + " ");
+            if(i % 200 == 0){
+                System.out.println();
+            }
             LabelTwo:
             while (true){
                 i++;
